@@ -1,0 +1,91 @@
+<html>
+        <head>
+            <title>"Sign up form"</title>  
+            <style>
+                body{
+                background-image: url("1.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                }
+                :hover{
+            color: red;
+        }
+        .input:hover{
+            color:blanchedalmond;
+        }
+     input[type="text"]:focus
+     {
+         outline-color: blue;
+     }
+     input[type="password"]:focus
+     {
+         outline-color: blue;
+     }
+             
+            table,th,td{
+                border: 2px solid blue;
+                border-collapse: collapse;
+                border-color: black;
+                margin-top: 200px;
+                color:white;
+                }
+            </style>    
+        </head>
+        <body >
+            
+            <center><table bgcolor="black">
+                <form method="POST" name="SIGN UP">
+                    <tr>
+                        <td colspan="2"><center><font size=4><b>Sign Up</b></font></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" size=25 name="Firstname"placeholder="enter first name"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name </td>
+                        <td><input type="text" size=25 name="Lastname"placeholder="EnterLast name"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" size=25 name="password"placeholder="Enter Password..."></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm Password</td>
+                        <td><input type="password" size=25 name="ConfirmPassword"placeholder="re-enter password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><center><input type="Submit" onclick="check(this.form)"value="Sign up"></center></td>
+                    </tr>
+                
+                <script language="javascript">
+                        /*function signuP(){
+                       //     alert("succesful")
+                        }*/
+                    
+
+                    function check(form) {
+                         if (form.Firstname.value == "" || form.Lastname.value == "" || form.password.value=="" || form.ConfirmPassword.value=="")
+                         {
+                             alert("Fill the required details.")
+                         }
+                         else if (form.Firstname.value == "Vasudha" && form.Lastname.value == "Garg" && form.password.value=="vasu" && form.ConfirmPassword.value=="vasu") 
+                        {
+                            alert("successful")
+                        }                        
+                        else {
+                            alert("error password or userid")
+                            // return false;
+                        }
+                    }
+                        
+                </script>
+                </form>
+             </table>
+
+           </center>
+           <center><a href="https://www.clicklab.com/terms and conditions.html" >Terms and Concitions</a></center>
+                </body>
+                
+                </html>

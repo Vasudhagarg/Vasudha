@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>"login form"</title>
+</head>
+<form name="loginform">
+<table width=20%" bgcolor="blue" align="left">
+<tr>
+<td colspan=2><center><font size=4><b> login page</b></font></center></td>
+</tr>
+<tr>
+<td>Username</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" size=25 name="Password"></td>
+<tr>
+<td><input type="Reset"></td>
+<td><input type="Submit" onclick="check(this.form)value="login"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<html>
+<form>
+
+<head>
+    <title>"login form"</title>
+    <style>
+        body{
+        background-image: url("1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+        :hover{
+            color: red;
+        }
+        input[type="text"]:focus
+     {
+         outline-color: blue;
+     }
+        input[type="password"]:focus
+     {
+         outline-color: blue;
+     }
+    
+     
+    table,th,td{
+        background-color: black;
+        border: 2px solid blue;
+        border-collapse: collapse;
+        border-color:black;
+        margin-top: 200px;
+        color: white;
+    }
+    </style>
+</head>
+<body style="margin-top:20%;" bgcolor ="WHITE">
+
+<form name="loginform">
+    <table width=20% bgcolor="black" align="center" border="7px"  style="padding: 35;">
+        <tr>
+            <td colspan=2>
+                <center>
+                    <font size=4><b> login page</b></font>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" size=25 name="userid" placeholder="Enter username..."required></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" size=25 name="password"placeholder="Enter Password..."required></td>
+        </tr>
+        <tr>
+            <td colspan="2"><center><input type="Reset">&nbsp;
+            <input type="Submit" onclick="check(this.form)" value="login"></center></td>
+        </tr>
+    </table>
+   <center><a href="signupform.html" >Create New Account?</a></center>
+
+</form>
+<script language="javascript">
+    function check(form) {
+        if (form.userid.value=="")
+        {
+            alert("username empty")
+        }
+        else if(form.password.value=="")
+        {
+            alert("password empty")
+        }
+        else if (form.userid.value == "Vasudha" && form.password.value == "vasu") 
+        {
+            alert("login succesful")
+        }
+        else if(form.password.value!="vasu")
+        {
+        alert("wrong password")
+        }
+        
+        else {
+            alert("error password or userid")
+            // return false;
+        }
+    }
+</script>
+</body>
+
+</html>

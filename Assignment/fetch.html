@@ -1,0 +1,20 @@
+<html>
+    <head>
+        fetching data
+    </head>
+    <body>
+        <script>
+        fetch('https://reqres.in/api/users')
+     .then(res=>res.json())
+        .then(res=>
+        {
+            var data=res.data
+            console.log(data)
+            var aa=data[0].email
+            console.log(aa)
+        })
+        
+        </script>
+    </body>
+    
+</html>

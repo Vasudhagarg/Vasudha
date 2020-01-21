@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>loginform</title>
+</head>
+<body >
+    <form name="login">
+        username<input type="email" name="email"/><br>
+        password<input type="password" name="password"/><br>
+       <input type="button"  onclick="check(this.form)"value="login"/>
+    </form>
+   <script language="javascript">
+    function check(form)
+    {
+        if (form.email.value=="vasudhagarg@gmail.com" && form.password.value=="vasu"){
+            alert("logged in")
+        }
+
+        else if(form.email.value == "")
+        {
+                alert("email must not be empty")
+        }
+                else if(form.password.value=="")
+                {
+                    alert("password must not be empty")
+                }
+                else{
+    alert("wrong input")
+}
+        }
+           
+        
+    
+        </script>
+    </body>
+    </html>
